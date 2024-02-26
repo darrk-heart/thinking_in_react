@@ -1,10 +1,11 @@
 import React from "react";
 
-function ProductTable({ name, price }) {
+function ProductTable({ name, price, children }) {
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -19,6 +20,7 @@ function ProductTable({ name, price }) {
         <h3>{name}</h3>
         <h3>{price}</h3>
       </div>
+      <div>{children}</div>
     </div>
   );
 }
