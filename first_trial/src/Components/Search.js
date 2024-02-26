@@ -12,7 +12,7 @@ function Search() {
       }}
     >
       <input
-        style={{ width: "100px" }}
+        style={{ width: "210px" }}
         type="text"
         placeholder="Search ...."
       ></input>
