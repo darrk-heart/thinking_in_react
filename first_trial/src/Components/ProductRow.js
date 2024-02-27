@@ -10,8 +10,12 @@ function ProductRow() {
     <div>
       <ul style={{ listStyleType: "none" }}>
         {fruits.map((fruit, index) => (
-          <li key={index}>
-            {fruit.name} ${fruit.price}
+          <li
+            key={index}
+            style={{ color: fruit.name === "Dragonfruit" ? "red" : "black" }}
+          >
+            {fruit.name} <span style={{ marginRight: "100px" }}></span> $
+            {fruit.price}
           </li>
         ))}
       </ul>
