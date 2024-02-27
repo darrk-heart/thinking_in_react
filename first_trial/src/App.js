@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Search />
-      <ProductTable name="Name" price="Price" />
+      <ProductTable />
     </div>
   );
 }

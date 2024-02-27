@@ -3,7 +3,7 @@ import ProductCatRow from "./ProductCatRow";
 import ProductRow from "./ProductRow";
 import ProductRower from "./ProductRower";
 
-function ProductTable({ name, price }) {
+function ProductTable() {
   return (
     <div
       style={{
@@ -20,8 +20,8 @@ function ProductTable({ name, price }) {
           justifyContent: "space-between",
         }}
       >
-        <h3>{name}</h3>
-        <h3>{price}</h3>
+        <h3>Name</h3>
+        <h3>Price</h3>
       </div>
       <div>
         <ProductCatRow type="Fruits" />
