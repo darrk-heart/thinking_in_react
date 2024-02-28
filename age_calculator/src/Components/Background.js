@@ -6,7 +6,7 @@ function Background({ children }) {
       style={{
         backgroundColor: "white",
         height: "60vh",
-        width: "46%",
+        width: "40%",
         borderRadius: "20px 20px 150px 20px",
         padding: "50px",
       }}

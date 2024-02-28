@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Background>
         <DateInput />
+        <div style={{ margin: "10px" }}></div>
         <DateDisplay />
       </Background>
     </div>

@@ -1,0 +1,19 @@
+.display-head {
+  display: flex;
+}
+.display {
+  display: flex;
+  flex-direction: column;
+}
+span {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.hyphen {
+  letter-spacing: 0.3rem;
+  color: #8a2be2;
+}
+.space {
+  width: 30px;
+}
