@@ -1,4 +1,4 @@
-.dateinput {
+.first {
   display: flex;
 }
 .head {
@@ -18,10 +18,24 @@ input {
   height: 50px;
   border-radius: 5px;
   border: 1px solid #cccccc;
+  padding-left: 15px;
 }
 input::placeholder {
   font-weight: 800;
   font-size: 1.5rem;
   color: #999999;
-  padding-left: 10px;
+}
+.line {
+  width: 700px;
+  height: 0.5px;
+  background-color: #cccccc;
+}
+.arrow {
+  background-color: #8a2be2;
+  padding: 20px;
+  border-radius: 50%;
+}
+.one {
+  justify-content: space-between;
+  align-items: center;
 }
