@@ -3,17 +3,18 @@ import "./DateDisplay.css";
 
 function DateDisplay() {
   return (
-    <div className="display-head">
-      <div className="space"></div>
-      <div className="display">
+    <div className="display">
+      <div>
         <span className="hyphen">--</span>
-        <span className="hyphen">--</span>
-        <span className="hyphen">--</span>
+        <span> years</span>
       </div>
-      <div className="display">
-        <span>years</span>
-        <span>months</span>
-        <span>days</span>
+      <div>
+        <span className="hyphen">--</span>
+        <span> months</span>
+      </div>
+      <div>
+        <span className="hyphen">--</span>
+        <span> days</span>
       </div>
     </div>
   );

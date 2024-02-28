@@ -1,6 +1,3 @@
-.display-head {
-  display: flex;
-}
 .display {
   display: flex;
   flex-direction: column;
