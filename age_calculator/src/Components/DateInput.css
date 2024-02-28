@@ -25,6 +25,13 @@ input::placeholder {
   font-size: 1.5rem;
   color: #999999;
 }
+input:focus {
+  outline: none;
+  border-color: #8a2be2;
+}
+input:hover {
+  cursor: pointer;
+}
 .line {
   width: 700px;
   height: 0.5px;
@@ -34,6 +41,10 @@ input::placeholder {
   background-color: #8a2be2;
   padding: 20px;
   border-radius: 50%;
+}
+.arrow:hover {
+  cursor: pointer;
+  background-color: black;
 }
 .one {
   justify-content: space-between;

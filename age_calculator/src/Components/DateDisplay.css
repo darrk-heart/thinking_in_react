@@ -4,11 +4,11 @@
 .display {
   display: flex;
   flex-direction: column;
+  font-style: italic;
 }
 span {
   font-size: 4.5rem;
   font-weight: 800;
-  font-style: italic;
 }
 .hyphen {
   letter-spacing: 0.3rem;
