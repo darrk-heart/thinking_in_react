@@ -1,21 +1,19 @@
 import React from "react";
 import "./DateDisplay.css";
 
+const DisplayItem = ({ label, value }) => (
+  <div>
+    <span className="hyphen">{value}</span>
+    <span>{label}</span>
+  </div>
+);
+
 function DateDisplay() {
   return (
     <div className="display">
-      <div>
-        <span className="hyphen">--</span>
-        <span> years</span>
-      </div>
-      <div>
-        <span className="hyphen">--</span>
-        <span> months</span>
-      </div>
-      <div>
-        <span className="hyphen">--</span>
-        <span> days</span>
-      </div>
+      <DisplayItem label=" years" value="--" />
+      <DisplayItem label=" months" value="--" />
+      <DisplayItem label=" days" value="--" />
     </div>
   );
 }

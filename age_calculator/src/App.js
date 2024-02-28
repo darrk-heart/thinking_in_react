@@ -1,14 +1,17 @@
+import React from "react";
 import "./App.css";
-import Background from "./Components/Background";
-import DateInput from "./Components/DateInput";
-import DateDisplay from "./Components/DateDisplay";
+import Background from "./components/Background";
+import DateInput from "./components/DateInput";
+import DateDisplay from "./components/DateDisplay";
 
 function App() {
   return (
     <div className="App">
       <Background>
-        <DateInput />
-        <DateDisplay />
+        <>
+          <DateInput />
+          <DateDisplay />
+        </>
       </Background>
     </div>
   );
