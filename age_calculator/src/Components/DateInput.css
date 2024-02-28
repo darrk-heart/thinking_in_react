@@ -19,6 +19,8 @@ input {
   border-radius: 5px;
   border: 1px solid #cccccc;
   padding-left: 15px;
+  font-size: 1.7rem;
+  font-weight: 750;
 }
 input::placeholder {
   font-weight: 800;

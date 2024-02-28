@@ -1,22 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import "./DateInput.css";
 import arrow from "../Assets/icon-arrow.svg";
 
+const isValidDay = (value) => {
+  return !isNaN(value) && value >= 1 && value <= 31;
+};
+const isValidMonth = (value) => {
+  return !isNaN(value) && value >= 1 && value <= 12;
+};
+const isValidYear = (value) => {
+  return !isNaN(value) && value >= 1920 && value <= 2023;
+};
+
 function DateInput() {
+  const [dayValue, setDayValue] = useState("");
+  const [monthValue, setMonthValue] = useState("");
+  const [yearValue, setYearValue] = useState("");
+
+  const handleDayChange = (e) => {
+    const value = e.target.value;
+    if (isValidDay(value)) {
+      setDayValue(value);
+    }
+  };
+
+  const handleMonthChange = (e) => {
+    const value = e.target.value;
+    if (isValidMonth(value)) {
+      setMonthValue(value);
+    }
+  };
+
+  const handleYearChange = (e) => {
+    const value = e.target.value;
+    if (isValidYear(value)) {
+      setYearValue(value);
+    }
+  };
+
   return (
     <div>
       <div className="first">
         <div className="head">
           <span className="heading">DAY</span>
-          <input placeholder="DD"></input>
+          <input
+            type="number"
+            id="dayInput"
+            value={dayValue}
+            onChange={handleDayChange}
+            min="1"
+            max="31"
+            placeholder="DD"
+          ></input>
         </div>
         <div className="head">
           <span className="heading">MONTH</span>
-          <input placeholder="MM"></input>
+          <input
+            type="number"
+            id="monthInput"
+            value={monthValue}
+            onChange={handleMonthChange}
+            min="1"
+            max="12"
+            placeholder="MM"
+          ></input>
         </div>
         <div className="head">
           <span className="heading">YEAR</span>
-          <input placeholder="YYYY"></input>
+          <input
+            type="number"
+            id="yearInput"
+            value={yearValue}
+            onChange={handleYearChange}
+            min="1920"
+            max="2023"
+            placeholder="YYYY"
+          ></input>
         </div>
       </div>
       <div className="first one">
@@ -34,5 +93,3 @@ function DateInput() {
 }
 
 export default DateInput;
-
-// src\Assets\icon-arrow.svg
