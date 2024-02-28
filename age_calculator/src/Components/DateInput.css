@@ -1,10 +1,12 @@
 .first {
   display: flex;
 }
+
 .head {
   display: flex;
   flex-direction: column;
 }
+
 .heading {
   font-size: 0.7rem;
   font-weight: 700;
@@ -12,6 +14,7 @@
   color: #666666;
   margin-bottom: 7px;
 }
+
 input {
   width: 120px;
   margin-right: 40px;
@@ -22,32 +25,39 @@ input {
   font-size: 1.7rem;
   font-weight: 750;
 }
+
 input::placeholder {
   font-weight: 800;
   font-size: 1.5rem;
   color: #999999;
 }
+
 input:focus {
   outline: none;
   border-color: #8a2be2;
 }
+
 input:hover {
   cursor: pointer;
 }
+
 .line {
   width: 700px;
   height: 0.5px;
   background-color: #cccccc;
 }
+
 .arrow {
   background-color: #8a2be2;
   padding: 20px;
   border-radius: 50%;
 }
+
 .arrow:hover {
   cursor: pointer;
   background-color: black;
 }
+
 .one {
   justify-content: space-between;
   align-items: center;
