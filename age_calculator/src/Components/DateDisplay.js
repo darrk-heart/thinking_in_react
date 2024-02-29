@@ -8,12 +8,17 @@ const DisplayItem = ({ label, value }) => (
   </div>
 );
 
-function DateDisplay() {
+function DateDisplay({ age }) {
+  const { years, months, days } = age || {};
+
   return (
     <div className="display">
-      <DisplayItem label=" years" value="--" />
-      <DisplayItem label=" months" value="--" />
-      <DisplayItem label=" days" value="--" />
+      <DisplayItem label=" years" value={years !== undefined ? years : "--"} />
+      <DisplayItem
+        label=" months"
+        value={months !== undefined ? months : "--"}
+      />
+      <DisplayItem label=" days" value={days !== undefined ? days : "--"} />
     </div>
   );
 }

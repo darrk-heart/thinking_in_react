@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Background from "./components/Background";
-import DateDisplay from "./components/DateDisplay";
 import DateInput from "./components/DateInput";
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
       <Background>
         <>
           <DateInput />
-          <DateDisplay />
         </>
       </Background>
     </div>

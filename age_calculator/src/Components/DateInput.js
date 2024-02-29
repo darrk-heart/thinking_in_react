@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./DateInput.css";
 import arrow from "../assets/icon-arrow.svg";
+import DateDisplay from "./DateDisplay";
 
 const isValidInput = (value, min, max) =>
   !isNaN(value) && value >= min && value <= max;
@@ -94,13 +95,7 @@ function DateInput() {
           />
         </div>
       </div>
-      {/* Display age */}
-      {age !== null && (
-        <p>
-          Your age is {age.years} years, {age.months} months, and {age.days}{" "}
-          days old.
-        </p>
-      )}
+      <DateDisplay age={age} />
     </div>
   );
 }
