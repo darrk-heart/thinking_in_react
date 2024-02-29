@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import Background from "./components/Background";
-import DateInput from "./components/DateInput";
 import DateDisplay from "./components/DateDisplay";
+import DateInput from "./components/DateInput";
 
 function App() {
   return (

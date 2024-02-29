@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./DateInput.css";
-import arrow from "../Assets/icon-arrow.svg";
+import arrow from "../assets/icon-arrow.svg";
 
 const isValidInput = (value, min, max) =>
   !isNaN(value) && value >= min && value <= max;
