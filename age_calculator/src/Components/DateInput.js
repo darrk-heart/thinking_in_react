@@ -12,6 +12,21 @@ function DateInput() {
   const [yearValue, setYearValue] = useState("");
   const [age, setAge] = useState(null);
 
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   const handleInputChange = (e, setter, min, max) => {
     const value = e.target.value;
     if (isValidInput(value, min, max)) {
@@ -61,15 +76,18 @@ function DateInput() {
         </div>
         <div className="head">
           <span className="heading">MONTH</span>
-          <input
-            type="number"
+          <select
             id="monthInput"
             value={monthValue}
-            onChange={(e) => handleInputChange(e, setMonthValue, 1, 12)}
-            min="1"
-            max="12"
-            placeholder="MM"
-          />
+            onChange={(e) => setMonthValue(e.target.value)}
+          >
+            <option value="">MM</option>
+            {months.map((month, index) => (
+              <option key={index} value={index + 1}>
+                {month}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="head">
           <span className="heading">YEAR</span>
